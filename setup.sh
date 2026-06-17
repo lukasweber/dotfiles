@@ -22,6 +22,7 @@ if ! command -v brew &>/dev/null; then
   fi
 fi
 
+brew trust --tap nikitabobko/tap
 brew bundle --file="$DOTFILES_DIR/Brewfile"
 
 mkdir -p "$HOME/.config/mise"
