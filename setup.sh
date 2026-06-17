@@ -1,7 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DOTFILES_DIR="$HOME/work/git/dotfiles"
+
+if [ ! -d "$DOTFILES_DIR" ]; then
+  mkdir -p "$HOME/work/git"
+  git clone https://github.com/lukasweber/dotfiles.git "$DOTFILES_DIR"
+fi
+
+cd "$DOTFILES_DIR"
 
 if ! xcode-select -p &>/dev/null; then
   xcode-select --install
