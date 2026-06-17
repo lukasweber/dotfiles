@@ -1,0 +1,13 @@
+[user]
+	name = Lukas Weber
+	email = <devlukas@hotmail.com>
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+[init]
+	defaultBranch = main
+[core]
+	autocrlf = input
+	excludesFile = ~/.gitignore

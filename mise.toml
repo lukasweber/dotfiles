@@ -1,0 +1,36 @@
+[tools]
+terraform   = "latest"
+opentofu    = "latest"
+python      = "3.13"
+rust        = "stable"
+lazygit     = "latest"
+lazydocker  = "latest"
+uv          = "latest"
+ripgrep     = "latest"
+fd          = "latest"
+fzf         = "latest"
+jq          = "latest"
+zoxide      = "latest"
+starship    = "latest"
+bat         = "latest"
+eza         = "latest"
+tlrc        = "latest"
+
+[settings]
+experimental = true
+
+[dotfiles]
+"~/.gitconfig"                          = { source = ".gitconfig",                   mode = "symlink" }
+"~/.zshrc"                               = { source = "zshrc",                         mode = "symlink" }
+"~/.config/nvim"                         = { source = ".config/nvim",                 mode = "symlink" }
+"~/.config/aerospace/aerospace.toml"     = { source = ".config/aerospace/aerospace.toml", mode = "symlink" }
+
+[bootstrap.macos.defaults."com.apple.dock"]
+autohide = true
+
+[tasks.bootstrap]
+run = """
+dockutil --remove all --no-restart
+dockutil --add /Applications/Ghostty.app --no-restart
+dockutil --add /Applications/Firefox.app
+"""
