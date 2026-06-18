@@ -1,4 +1,5 @@
 [tools]
+neovim     = "latest"
 terraform   = "latest"
 opentofu    = "latest"
 python      = "3.13"
