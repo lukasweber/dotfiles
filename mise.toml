@@ -16,6 +16,8 @@ starship    = "latest"
 bat         = "latest"
 eza         = "latest"
 tlrc        = "latest"
+pnpm        = "latest"
+node        = "24"
 
 [settings]
 experimental = true
