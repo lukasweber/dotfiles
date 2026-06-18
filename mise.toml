@@ -22,6 +22,7 @@ experimental = true
 [dotfiles]
 "~/.gitconfig"                          = { source = ".gitconfig",                   mode = "symlink" }
 "~/.zshrc"                               = { source = "zshrc",                         mode = "symlink" }
+"~/.gnupg/gpg-agent.conf"                = { source = ".gnupg/gpg-agent.conf",        mode = "symlink" }
 "~/.config/nvim"                         = { source = ".config/nvim",                 mode = "symlink" }
 "~/.config/aerospace/aerospace.toml"     = { source = ".config/aerospace/aerospace.toml", mode = "symlink" }
 
