@@ -1,13 +1,21 @@
 [user]
-	name = Lukas Weber
-	email = devlukas@hotmail.com
+  name = Lukas Weber
+  email = devlukas@hotmail.com
+  signingkey = 5DCBD9B6E240C131
 [alias]
-	co = checkout
-	br = branch
-	ci = commit
-	st = status
+  co = checkout
+  br = branch
+  ci = commit
+  st = status
 [init]
-	defaultBranch = main
+  defaultBranch = main
 [core]
-	autocrlf = input
-	excludesFile = ~/.gitignore
+  autocrlf = input
+  excludesFile = ~/.gitignore
+[commit]
+  gpgsign = true
+[tag]
+  gpgSign = true
+[gpg]
+  format = openpgp
+  program = /opt/homebrew/bin/gpg
